@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url("../images/bc.jpg");
+    background-size: cover;
+    background-blend-mode:difference;
+    height: 60vh;
+
+}
+
+
+header nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li{
+    margin: 0 10px;
+    list-style: none;
+}
+nav ul li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+.logo img{
+    width: 60px;
+    color: white;
+    filter: invert(100%);
+    margin-right: 20px;
+}
+
+.hero{
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+h1{
+    margin-top: 50px;
+    font-size: 3rem;
+}
+p{
+    margin-top: 10px;
+    font-weight: 500;
+}
+.btn-container{
+    align-content: center;
+}
+.btn{
+    width: 100px;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(192, 41, 41, 0.692);
+    border-radius:8px;
+    margin-top: 10px;
+}
+#services h1{
+    text-align: center;
+    margin: 40px 20px;
+    font-size: 2.2rem;
+
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 28vw;
+    height: 280px;
+    border: 3px solid rgba(150, 0, 0, 0.692);
+    border-radius: 25px;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: rgb(255, 247, 247);
+}
+.card h3{
+    font-size: 1.5rem;
+}
+.card img{
+    width: 170px;
+}
+#clients{
+    margin: 50px 0 0 0;
+}
+.clients-background{
+    background: rgba(0, 0, 0, 0.7) url("../images/contact.jpg");
+    background-size: cover;
+    background-blend-mode:difference;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+#clients img{
+    width: 100px;
+}
+.heading{
+    text-align: center;
+    margin: 20px 20px;
+    font-size: 2.7rem;
+    color: white;
+}
+#clients ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li {
+    list-style: none;
+    margin:0 20px;
+}
+
+footer div{
+    background-color: cornflowerblue;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    padding: 20px 0;
+
+}
+
+@media screen and (max-width:1200px){
+    .cards{
+        flex-direction:column;
+    
+    }
+
+    .card{
+        margin-top: 20px;
+        width: 60vw;
+        height: 40vh;
+
+    }
+}
+@media screen and (max-width:550px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
+    .card{
+        margin-top: 20px;
+        width: 80vw;
+        height: 35vh;
+
+    }
+    #clients ul{
+        flex-direction: column;
+    }
+    p{
+        font-size: large;
+    }
+    #services h1{
+        margin: 20px 20px;
+    }
+    .background{
+        height: 80vh;
+
+    }
+    .clients-background{
+        height: 75vh;
+    }
+}
